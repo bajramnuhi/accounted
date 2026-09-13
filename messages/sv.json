@@ -6997,6 +6997,7 @@
     "tab_cancelled": "Makulerade",
     "no_search_results_title": "Inga träffar",
     "no_search_results_description": "Inga fakturor matchar \"{term}\".",
+    "no_search_results_quotes_description": "Inga offerter matchar \"{term}\".",
     "no_category_title": "Inga fakturor i denna kategori",
     "no_category_description": "Prova att byta flik för att se fler fakturor.",
     "no_unsent_title": "Inga ej skickade fakturor",

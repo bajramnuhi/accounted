@@ -6997,6 +6997,7 @@
     "tab_cancelled": "Cancelled",
     "no_search_results_title": "No matches",
     "no_search_results_description": "No invoices match \"{term}\".",
+    "no_search_results_quotes_description": "No quotes match \"{term}\".",
     "no_category_title": "No invoices in this category",
     "no_category_description": "Try switching tabs to see more invoices.",
     "no_unsent_title": "No unsent invoices",

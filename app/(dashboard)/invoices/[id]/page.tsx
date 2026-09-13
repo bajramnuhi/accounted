@@ -2078,7 +2078,13 @@ export default function InvoiceDetailPage({ params }: { params: Promise<{ id: st
                     <DropdownMenuSeparator />
                     {isProforma || isQuote ? (
                       <DropdownMenuItem
-                        onSelect={() => void updateStatus('cancelled')}
+                        // A cancelled quote is done with: back to Offerter,
+                        // the way deleting a draft returns to its list.
+                        onSelect={() =>
+                          void updateStatus('cancelled').then((ok) => {
+                            if (ok && isQuote) router.push('/quotes')
+                          })
+                        }
                         disabled={isUpdating || !canWrite}
                         className="text-destructive focus:text-destructive"
                       >
